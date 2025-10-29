@@ -103,16 +103,16 @@ const buySteps = [
 
 export default function Homepage() {
   const [currentImage, setCurrentImage] = useState(0);
-    const user = useSelector((state: RootState) => state.user.user);
-   const router= useRouter()
+  const user = useSelector((state: RootState) => state.user.user);
+  const router = useRouter()
 
-    useEffect(() =>{
-      if(user && user.role !== "user"){
-        router.push('/admin')
-      }
-    },[user,router])
+  useEffect(() => {
+    if (user && user.role !== "user") {
+      router.push('/admin')
+    }
+  }, [user, router])
 
-    
+
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % bannerImages.length);
@@ -127,9 +127,8 @@ export default function Homepage() {
         {bannerImages.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              currentImage === index ? "opacity-100" : "opacity-0"
-            }`}
+            className={`absolute inset-0 transition-opacity duration-1000 ${currentImage === index ? "opacity-100" : "opacity-0"
+              }`}
           >
             <Image
               src={image}
@@ -262,6 +261,7 @@ export default function Homepage() {
         </div>
       </section>
 
+      {/* blog post */}
       <section className="py-16 bg-[rgb(221,234,254)]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">

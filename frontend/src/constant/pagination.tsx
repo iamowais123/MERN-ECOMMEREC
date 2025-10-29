@@ -1,4 +1,3 @@
-// Pagination.tsx
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -8,6 +7,8 @@ interface PaginationProps {
   totalPages: number;
   onPageChange: (page: number) => void;
 }
+
+// pagination component ka use karke ham book section me ek page se dusre page pe jaa rahe hai waha pe page number aa raha hai yehi isme likha hai
 
 const Pagination: React.FC<PaginationProps> = ({
   currentPage,

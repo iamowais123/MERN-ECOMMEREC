@@ -5,7 +5,7 @@ import { uploadFileToCloudinary } from '../config/cloudnaryConfig';
 
 export const createProduct = async (req: Request, res: Response) => {
   try {
-    const { title, description,price,category, condition, author,subject, edition,finalPrice,shippingCharge ,classType,paymentMode,paymentDetails} = req.body;
+    const { title, description, price, category, condition, author, subject, edition, finalPrice, shippingCharge, classType, paymentMode, paymentDetails } = req.body;
     const images = req.files as Express.Multer.File[];
     const loggedInUser = req.id;
 
@@ -20,11 +20,11 @@ export const createProduct = async (req: Request, res: Response) => {
       return response(res, 400, 'UPI ID is required for UPI payment mode.');
     }
 
-    if (paymentMode === 'Bank Account' && 
-      (!parsedPaymentDetails || !parsedPaymentDetails.bankDetails || 
-       !parsedPaymentDetails.bankDetails.accountNumber ||
-       !parsedPaymentDetails.bankDetails.ifscCode ||
-       !parsedPaymentDetails.bankDetails.bankName)) {
+    if (paymentMode === 'Bank Account' &&
+      (!parsedPaymentDetails || !parsedPaymentDetails.bankDetails ||
+        !parsedPaymentDetails.bankDetails.accountNumber ||
+        !parsedPaymentDetails.bankDetails.ifscCode ||
+        !parsedPaymentDetails.bankDetails.bankName)) {
       return response(res, 400, 'Complete bank details are required for Bank Account payment mode.');
     }
 
@@ -52,19 +52,19 @@ export const createProduct = async (req: Request, res: Response) => {
     });
 
     await product.save();
-   return response(res, 201, 'Product created successfully', product);
+    return response(res, 201, 'Product created successfully', product);
   } catch (error) {
     console.error(error)
-   return response(res, 500, 'Error creating product');
+    return response(res, 500, 'Error creating product');
   }
 };
 
 export const getAllProducts = async (req: Request, res: Response) => {
   try {
     const products = await Product.find()
-      .sort({ createdAt: -1 }) 
+      .sort({ createdAt: -1 })
       .populate('seller', 'name email');
-    
+
     response(res, 200, 'Products fetched successfully', products);
   } catch (error) {
     response(res, 500, 'Error fetching products');
@@ -75,15 +75,15 @@ export const getAllProducts = async (req: Request, res: Response) => {
 export const getProductById = async (req: Request, res: Response) => {
   try {
     const product = await Product.findById(req.params.id)
-    .populate({
-      path: 'seller',
-      select: 'name email profilePicture phoneNumber addresses',
-      populate: {
-        path: 'addresses',
-        model: 'Address', 
-      },
-    });
-  
+      .populate({
+        path: 'seller',
+        select: 'name email profilePicture phoneNumber addresses',
+        populate: {
+          path: 'addresses',
+          model: 'Address',
+        },
+      });
+
     if (!product) {
       return response(res, 404, 'Product not found');
     }
@@ -116,7 +116,7 @@ export const getProductsBySeller = async (req: Request, res: Response) => {
     }
 
     const products = await Product.find({ seller: sellerId })
-      .sort({ createdAt: -1 }) 
+      .sort({ createdAt: -1 })
       .populate('seller', 'name email profilePicture phoneNumber');
 
     if (products.length === 0) {

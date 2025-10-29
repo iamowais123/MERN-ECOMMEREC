@@ -166,7 +166,7 @@ const Login: React.FC<LoginProps> = ({ isLoginOpen, setIsLoginOpen }) => {
             <TabsTrigger value="signup">Sign Up</TabsTrigger>
             <TabsTrigger value="forgot">Forgot</TabsTrigger>
           </TabsList>
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="wait"> 
             <motion.div
               key={currentTab}
               initial={{ opacity: 0, y: 20 }}

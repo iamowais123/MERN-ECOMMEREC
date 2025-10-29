@@ -18,8 +18,8 @@ interface ResetPasswordFormData {
 }
 
 const ResetPassword: React.FC = () => {
-    const { token } = useParams<{ token: string }>();
-    const dispatch = useDispatch();
+  const { token } = useParams<{ token: string }>();
+  const dispatch = useDispatch();
   const [showPassword, setShowPassword] = useState(false)
   const [resetSuccess, setResetSuccess] = useState(false)
   const [resetPassword] = useResetPasswordMutation()

@@ -32,7 +32,7 @@ const uploadFileToCloudinary = (file: CustomFile): Promise<UploadApiResponse> =>
     });
 };
 
-// Multer middleware for handling multiple file uploads
-const multerMiddleware: RequestHandler = multer({ dest: 'uploads/' }).array('images', 4); 
+// Multer middleware for handling multiple file uploads ek sath ham 4 image store kar sakte hai usse zyada nahi
+const multerMiddleware: RequestHandler = multer({ dest: 'uploads/' }).array('images', 4);
 
 export { multerMiddleware, uploadFileToCloudinary };

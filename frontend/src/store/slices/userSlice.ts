@@ -4,14 +4,14 @@ interface UserState {
   user: any | null;
   isEmailVerified: boolean;
   isLoginDialogOpen: boolean;
-  isLoggedIn: boolean; 
+  isLoggedIn: boolean;
 }
 
 const initialState: UserState = {
   user: null,
-  isEmailVerified:false,
+  isEmailVerified: false,
   isLoginDialogOpen: false,
-  isLoggedIn: false, 
+  isLoggedIn: false,
 };
 
 const userSlice = createSlice({
@@ -27,19 +27,19 @@ const userSlice = createSlice({
     logout: (state) => {
       state.user = null;
       state.isEmailVerified = false;
-      state.isLoggedIn = false; 
+      state.isLoggedIn = false;
     },
-    toggleLoginDialog: (state) => { 
+    toggleLoginDialog: (state) => {
       state.isLoginDialogOpen = !state.isLoginDialogOpen;
     },
     authStatus: (state) => {
       console.log('authStatus called, updating isLoggedIn');
       state.isLoggedIn = true;
     }
-    
+
   },
 });
 
-export const { setUser, logout,setEmailVerified,toggleLoginDialog ,authStatus} = userSlice.actions;
+export const { setUser, logout, setEmailVerified, toggleLoginDialog, authStatus } = userSlice.actions;
 
 export default userSlice.reducer;

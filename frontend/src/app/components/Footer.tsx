@@ -126,7 +126,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} BookKart. All rights reserved.
           </p>
           <div className="flex items-center space-x-4">
-          <Image
+            <Image
               src="/icons/visa.svg"
               alt="Visa"
               width={50}

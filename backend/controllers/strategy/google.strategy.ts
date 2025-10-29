@@ -2,7 +2,7 @@ import passport from 'passport';
 import { Strategy as GoogleStrategy, Profile } from 'passport-google-oauth20';
 import { Request } from 'express';
 import dotenv from 'dotenv';
-import User, { IUser } from '../../models/User';  
+import User, { IUser } from '../../models/User';
 
 dotenv.config();
 
@@ -42,9 +42,9 @@ passport.use(
           name: displayName,
           email: emails?.[0]?.value,
           profilePicture: photos?.[0]?.value,
-          isVerified:true,
-          agreeTerms:true,
-          role:'user'
+          isVerified: true,
+          agreeTerms: true,
+          role: 'user'
         });
         done(null, user);
       } catch (error) {
