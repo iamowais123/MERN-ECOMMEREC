@@ -30,6 +30,7 @@ app.use(cookieParser());
 connectDB()
 
 
+
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
