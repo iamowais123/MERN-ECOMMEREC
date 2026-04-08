@@ -27,15 +27,13 @@
 ### 🏠 Home Page
 
 ```md
-![Home Page](<img width="1350" height="636" alt="image" src="https://github.com/user-attachments/assets/7890937e-98c6-4b4f-9029-65435a957042" />
-)
+<img width="1350" height="636" alt="image" src="https://github.com/user-attachments/assets/7890937e-98c6-4b4f-9029-65435a957042"
 ```
 
 ### 📚 Product Listing
 
 ```md
-![Product Listing](<img width="1351" height="632" alt="image" src="https://github.com/user-attachments/assets/508b9479-a570-481a-bc71-2ce808befcf8" />
-)
+<img width="1351" height="632" alt="image" src="https://github.com/user-attachments/assets/508b9479-a570-481a-bc71-2ce808befcf8" />
 ```
 
 ### 🔎 Filters & Search
