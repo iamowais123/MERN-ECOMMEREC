@@ -24,11 +24,8 @@
 
 ## 📸 Screenshots
 
-### 🏠 Home Page
-
-```md
-<img width="1350" height="636" alt="image" src="https://github.com/user-attachments/assets/7890937e-98c6-4b4f-9029-65435a957042"
-```
+<h3>🏠 Home Page</h3>
+<img src="https://github.com/user-attachments/assets/7890937e-98c6-4b4f-9029-65435a957042" width="100%" />
 
 ### 📚 Product Listing
 
