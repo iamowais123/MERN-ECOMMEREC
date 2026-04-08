@@ -27,58 +27,25 @@
 <h3>🏠 Home Page</h3>
 <img src="https://github.com/user-attachments/assets/7890937e-98c6-4b4f-9029-65435a957042" width="100%" />
 
-### 📚 Product Listing
+<h3>📚 Product Listing</h3>
+<img width="100%  src="https://github.com/user-attachments/assets/508b9479-a570-481a-bc71-2ce808befcf8" />
 
-```md
-<img width="1351" height="632" alt="image" src="https://github.com/user-attachments/assets/508b9479-a570-481a-bc71-2ce808befcf8" />
-```
+<h3>🔎 Filters & Search</h3>
 
-### 🔎 Filters & Search
+<img width="100%" src="https://github.com/user-attachments/assets/7b2facf4-e6fa-4be9-b1f9-fe8baa559f41" />
 
-```md
-![Filters](<img width="1353" height="633" alt="image" src="https://github.com/user-attachments/assets/7b2facf4-e6fa-4be9-b1f9-fe8baa559f41" />
-)
-```
+<h3>🛒 Cart Page</h3>
 
-### 🛒 Cart Page
+<img width="100%" src="https://github.com/user-attachments/assets/5e1c94bc-520b-4130-bac8-1e4ec15d0efc" />
 
-```md
-![Cart](<img width="1356" height="635" alt="image" src="https://github.com/user-attachments/assets/5e1c94bc-520b-4130-bac8-1e4ec15d0efc" />
-)
-```
+<h3>💳 Checkout (Razorpay)</h3>
+<img width="100%" src="https://github.com/user-attachments/assets/925d873e-be59-4305-bbd4-3eff244b2a34" />
 
-### 💳 Checkout (Razorpay)
+<h3>❤️ Wishlist</h3>
+<img width="100%"" src="https://github.com/user-attachments/assets/b5b00c64-28e4-4118-a8f6-fc2bd3f02b42" />
 
-```md
-![Checkout](<img width="1366" height="632" alt="image" src="https://github.com/user-attachments/assets/925d873e-be59-4305-bbd4-3eff244b2a34" />
-)
-```
-
-### ❤️ Wishlist
-
-```md
-![Wishlist](<img width="1354" height="636" alt="image" src="https://github.com/user-attachments/assets/b5b00c64-28e4-4118-a8f6-fc2bd3f02b42" />
-)
-```
-
-### 👤 User Profile
-
-```md
-![Profile](<img width="1353" height="626" alt="image" src="https://github.com/user-attachments/assets/1ebec0d7-54a9-41b2-8dcc-0593c0dcc858" />
-)
-```
-
-### 📦 Order History
-
-```md
-![Orders](./screenshots/orders.png)
-```
-
-### 🛠️ Admin Dashboard
-
-```md
-![Admin](./screenshots/admin.png)
-```
+<h3>👤 User Profile</h3>
+<img width="100%" src="https://github.com/user-attachments/assets/1ebec0d7-54a9-41b2-8dcc-0593c0dcc858" />
 
 ---
 
