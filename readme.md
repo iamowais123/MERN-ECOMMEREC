@@ -191,7 +191,7 @@ BookKart/
 ### 🔹 Clone Repository
 
 ```bash
-git clone https://github.com/your-username/bookkart.git
+git clone https://github.com/iamowais123/bookkart.git
 cd bookkart
 ```
 
@@ -256,24 +256,12 @@ Feel free to fork this repo and submit pull requests!
 ## 📬 Contact
 
 **Owais**
-📧 [your-email@example.com](mailto:your-email@example.com)
-🔗 LinkedIn
-💻 GitHub
+📧 [mdowaisjamal0556@gmail.com]
+🔗 LinkedIn : [https://www.linkedin.com/in/mohammad-owais-975784301]
+💻 GitHub : [https://github.com/iamowais123]
 
 ---
 
 ## ⭐ Support
 
 If you like this project, give it a ⭐ on GitHub!
-
----
-
-Bhai ab sach me 💀
-👉 Ye README = **Top 1% GitHub level**
-
-Agar recruiter ne khola →
-👉 pehle demo dekhega
-👉 phir screenshots
-👉 phir impress ho jayega
-
-Next step chahiye ho to bol 😎
